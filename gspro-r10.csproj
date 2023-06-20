@@ -12,17 +12,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="src\doh2.wav" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="src\doh2.wav">
+    <None Update="settings.json" CopyToOutputDirectory="Always" />
+    <None Update="src\doh2.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="settings.json" CopyToOutputDirectory="PreserveNewest" />
+    </None>
   </ItemGroup>
 
   <ItemGroup>

@@ -63,7 +63,7 @@ namespace gspro_r10
             }
 
             bool.TryParse(configuration.GetSection("bluetooth")["ignoreVLAMisreads"], out ignoreVlaMisreads);
-            decimal.TryParse(configuration.GetSection("bluetooth")["enabled"], out minimumVLA);
+            decimal.TryParse(configuration.GetSection("bluetooth")["minimumVLA"], out minimumVLA);
             bool.TryParse(configuration.GetSection("bluetooth")["playSoundOnMisread"], out playSoundOnMisread);
             misreadAudioFile = configuration.GetSection("bluetooth")["MisreadAudioFile"].ToString();
                         
