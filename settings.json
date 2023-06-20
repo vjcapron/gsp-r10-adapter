@@ -16,10 +16,14 @@
     "calibrateTiltOnConnect": true, // recalibrate tilt at the start of every session
     "debugLogging": false,
     "altitude": 0, // feet
-    "humidity": 0.5,  // percent (0 - 1)
+    "humidity": 0.5, // percent (0 - 1)
     "temperature": 60, // fahrenheit 
     "airDensity": 1.225, // kg/m^3
-    "teeDistanceInFeet": 7 // distance from R10 to ball in feet
+    "teeDistanceInFeet": 7, // distance from R10 to ball in feet
+    "ignoreVLAMisreads": true, // if true, shots that do not meet the minimum VLA will be ignored and not sent to GS Pro.  
+    "minimumVLA": 0.5, // decimal.  Most misreads on short chips have zero VLA.  If shot data is read by garmin as zero VLA.  Set to Higher number to test logic.
+    "playSoundOnMisread": true, // if true, zero VLA shots (usually misreads on short chips) will be ignored and not sent to GS Pro.  
+    "MisreadAudioFile": "doh2.wav" // wav file must reside in current directory.
   },
   "putting": {
     "enabled": false,
