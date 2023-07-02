@@ -5,6 +5,7 @@ using System.Text.Json;
 using gspro_r10.R10;
 using Microsoft.Extensions.Configuration;
 using NetCoreServer;
+using static LaunchMonitor.Proto.Metrics.Types;
 
 namespace gspro_r10
 {
@@ -93,7 +94,7 @@ namespace gspro_r10
           response = new SuccessResponse(R10MessageType.SetClubData);
           break;
         case R10MessageType.SendShot:
-          ConnectionManager.SendShot(BallDataFromR10BallData(BallData), ClubDataFromR10ClubData(ClubData));
+          ConnectionManager.SendShot(ShotType.Normal, BallDataFromR10BallData(BallData), ClubDataFromR10ClubData(ClubData));
           CompleteShot();
           response = new SuccessResponse(R10MessageType.SendShot);
           break;

@@ -4,7 +4,7 @@ using LaunchMonitor.Proto;
 using gspro_r10.bluetooth;
 using Microsoft.Extensions.Configuration;
 using System.Text;
-
+using System.Speech.Synthesis;
 namespace gspro_r10
 {
   public class BluetoothConnection : IDisposable
@@ -94,7 +94,7 @@ namespace gspro_r10
       lm.ShotMetrics += (o, e) =>
       {
         LogMetrics(e.Metrics);
-        ConnectionManager.SendShot(
+        ConnectionManager.SendShot(e.Metrics?.ShotType,
           BallDataFromLaunchMonitorMetrics(e.Metrics?.BallMetrics),
           ClubDataFromLaunchMonitorMetrics(e.Metrics?.ClubMetrics)
         );

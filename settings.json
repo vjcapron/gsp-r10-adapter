@@ -23,7 +23,9 @@
     "ignoreVLAMisreads": true, // if true, shots that do not meet the minimum VLA will be ignored and not sent to GS Pro.  
     "minimumVLA": 0.5, // decimal.  Most misreads on short chips have zero VLA.  If shot data is read by garmin as zero VLA.  Set to Higher number to test logic.
     "playSoundOnMisread": true, // if true, zero VLA shots (usually misreads on short chips) will be ignored and not sent to GS Pro.  
-    "MisreadAudioFile": "doh2.wav" // wav file must reside in current directory.
+    "playSoundOnPracticeSwing": true, // if true, audio will announce swing speed of the practice swing.
+    "MisreadAudioFile": "doh2.wav" //deprecated. not used anymore. wav file must reside in current directory.
+
   },
   "putting": {
     "enabled": false,

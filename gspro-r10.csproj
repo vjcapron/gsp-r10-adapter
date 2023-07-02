@@ -34,6 +34,7 @@
       <IncludeAssets>build; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="System.Speech" Version="7.0.0" />
     <PackageReference Include="System.Windows.Extensions" Version="8.0.0-preview.5.23280.8" />
   </ItemGroup>
 

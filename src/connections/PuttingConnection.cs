@@ -6,7 +6,7 @@ using System.Text.Json;
 using gspro_r10.Putting;
 using Microsoft.Extensions.Configuration;
 using NetCoreServer;
-
+using static LaunchMonitor.Proto.Metrics.Types;
 
 namespace gspro_r10
 {
@@ -37,7 +37,7 @@ namespace gspro_r10
           if (message != null)
           {
             if (PuttingServer.PuttingEnabled)
-              ConnectionManager.SendShot(BallDataFromPuttingBallData(message?.ballData), null);
+              ConnectionManager.SendShot(ShotType.Normal, BallDataFromPuttingBallData(message?.ballData), null);
             else
               PuttingLogger.LogPuttInfo("Not sending Putt because selected club is not putter");
           }

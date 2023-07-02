@@ -3,6 +3,10 @@ using System.Text.Json.Serialization;
 using gspro_r10.OpenConnect;
 using Microsoft.Extensions.Configuration;
 using System.Media;
+using System.Drawing.Imaging;
+using System.Speech.Synthesis;
+using static LaunchMonitor.Proto.Metrics.Types;
+
 namespace gspro_r10
 {
     public class ConnectionManager : IDisposable
@@ -16,6 +20,7 @@ namespace gspro_r10
         private bool ignoreVlaMisreads = false;
         private decimal minimumVLA = -1;
         private bool playSoundOnMisread = false;
+        private bool playSoundOnPracticeSwing = false;
         private string misreadAudioFile = "";
 
         internal IConfigurationRoot config { get; }
@@ -65,11 +70,12 @@ namespace gspro_r10
             bool.TryParse(configuration.GetSection("bluetooth")["ignoreVLAMisreads"], out ignoreVlaMisreads);
             decimal.TryParse(configuration.GetSection("bluetooth")["enabled"], out minimumVLA);
             bool.TryParse(configuration.GetSection("bluetooth")["playSoundOnMisread"], out playSoundOnMisread);
+            bool.TryParse(configuration.GetSection("bluetooth")["playSoundOnPracticeSwing"], out playSoundOnPracticeSwing);
             misreadAudioFile = configuration.GetSection("bluetooth")["MisreadAudioFile"].ToString();
                         
         }
 
-        internal void SendShot(OpenConnect.BallData? ballData, OpenConnect.ClubData? clubData)
+        internal void SendShot(ShotType? st, OpenConnect.BallData? ballData, OpenConnect.ClubData? clubData)
         {
             string openConnectMessage = JsonSerializer.Serialize(OpenConnectApiMessage.CreateShotData(
             shotNumber++,
@@ -87,11 +93,36 @@ namespace gspro_r10
                 else
                 {
                     OpenConnectLogger.LogGSPOutgoing(openConnectMessage);
-                    if (playSoundOnMisread)
+                    if (playSoundOnMisread && (st.HasValue && st == ShotType.Normal))
                     {
-                        SoundPlayer homer = new SoundPlayer();
-                        homer.SoundLocation = Environment.CurrentDirectory + "/" + misreadAudioFile;
-                        homer.Play();
+                        // Initialize a new instance of the SpeechSynthesizer.  
+                        SpeechSynthesizer synth = new SpeechSynthesizer();
+                        // Set a value for the speaking rate.  
+                        synth.Rate = 1;
+                        synth.Volume = 100;
+                        // Configure the audio output.   
+                        synth.SetOutputToDefaultAudioDevice();
+
+                        if (st.HasValue && st == ShotType.Normal)
+                        {
+                            // Speak a text string synchronously.  
+                            synth.Speak("Misread occurred. Please try again.");
+                        }                        
+                    }
+                    if (playSoundOnPracticeSwing && (st.HasValue && st == ShotType.Practice))
+                    {
+                        // Initialize a new instance of the SpeechSynthesizer.  
+                        using (SpeechSynthesizer synth = new SpeechSynthesizer())
+                        {
+                            // Set a value for the speaking rate.  
+                            synth.Rate = 1;
+                            synth.Volume = 100;
+                            // Configure the audio output.   
+                            synth.SetOutputToDefaultAudioDevice();                                                       
+                            // Speak a text string synchronously.  
+                            synth.Speak(clubData?.Speed.ToString() +  " miles per hour.");                            
+                        }
+                            
                     }
                 }
             } 
