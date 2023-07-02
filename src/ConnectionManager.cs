@@ -72,7 +72,7 @@ namespace gspro_r10
             bool.TryParse(configuration.GetSection("bluetooth")["playSoundOnMisread"], out playSoundOnMisread);
             bool.TryParse(configuration.GetSection("bluetooth")["playSoundOnPracticeSwing"], out playSoundOnPracticeSwing);
             misreadAudioFile = configuration.GetSection("bluetooth")["MisreadAudioFile"].ToString();
-                        
+
         }
 
         internal void SendShot(ShotType? st, OpenConnect.BallData? ballData, OpenConnect.ClubData? clubData)
@@ -84,8 +84,8 @@ namespace gspro_r10
             ), serializerSettings);
 
 
-            if (this.ignoreVlaMisreads) 
-            { 
+            if (this.ignoreVlaMisreads)
+            {
                 if (ballData != null && ballData.VLA > (double)minimumVLA)
                 {
                     OpenConnectClient.SendAsync(openConnectMessage);
@@ -107,7 +107,7 @@ namespace gspro_r10
                         {
                             // Speak a text string synchronously.  
                             synth.Speak("Misread occurred. Please try again.");
-                        }                        
+                        }
                     }
                     if (playSoundOnPracticeSwing && (st.HasValue && st == ShotType.Practice))
                     {
@@ -118,18 +118,18 @@ namespace gspro_r10
                             synth.Rate = 1;
                             synth.Volume = 100;
                             // Configure the audio output.   
-                            synth.SetOutputToDefaultAudioDevice();                                                       
+                            synth.SetOutputToDefaultAudioDevice();
                             // Speak a text string synchronously.  
-                            synth.Speak(clubData?.Speed.ToString() +  " miles per hour.");                            
+                            synth.Speak(clubData?.Speed.ToString() + " miles per hour.");
                         }
-                            
+
                     }
                 }
-            } 
+            }
             else
             {
                 OpenConnectClient.SendAsync(openConnectMessage);
-            }            
+            }
         }
 
         public void ClubUpdate(Club club)
