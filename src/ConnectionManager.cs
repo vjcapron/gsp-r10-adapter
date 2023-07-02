@@ -21,7 +21,7 @@ namespace gspro_r10
         private decimal minimumVLA = -1;
         private bool playSoundOnMisread = false;
         private bool playSoundOnPracticeSwing = false;
-        private string misreadAudioFile = "";
+        //private string misreadAudioFile = "";
 
         internal IConfigurationRoot config { get; }
         public event ClubChangedEventHandler? ClubChanged;
@@ -71,7 +71,7 @@ namespace gspro_r10
             decimal.TryParse(configuration.GetSection("bluetooth")["minimumVLA"], out minimumVLA);
             bool.TryParse(configuration.GetSection("bluetooth")["playSoundOnMisread"], out playSoundOnMisread);
             bool.TryParse(configuration.GetSection("bluetooth")["playSoundOnPracticeSwing"], out playSoundOnPracticeSwing);
-            misreadAudioFile = configuration.GetSection("bluetooth")["MisreadAudioFile"].ToString();
+            //misreadAudioFile = configuration.GetSection("bluetooth")["MisreadAudioFile"].ToString();
 
         }
 
