@@ -120,7 +120,13 @@ namespace gspro_r10
                             // Configure the audio output.   
                             synth.SetOutputToDefaultAudioDevice();
                             // Speak a text string synchronously.  
-                            synth.Speak(clubData?.Speed.ToString() + " miles per hour.");
+                            if(clubData != null)
+                            {
+                                var chSpeed = Math.Round((decimal)clubData.Speed, 1);
+                                synth.Speak(chSpeed.ToString() + " miles per hour.");
+                            }
+                            
+                            
                         }
 
                     }
