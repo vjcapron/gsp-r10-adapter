@@ -149,15 +149,17 @@ namespace gspro_r10
     public static OpenConnect.BallData? BallDataFromR10BallData(R10.BallData? r10BallData)
     {
       if (r10BallData == null) return null;
+      
       return new OpenConnect.BallData()
-      {
+      {          
         Speed = r10BallData.BallSpeed,
         SpinAxis = -1 * (r10BallData.SpinAxis < 90 ? r10BallData.SpinAxis : r10BallData.SpinAxis - 360),
         TotalSpin = r10BallData.TotalSpin,
         HLA = r10BallData.LaunchDirection,
         VLA = r10BallData.LaunchAngle,
         SideSpin = r10BallData.TotalSpin * -1 * Math.Sin(r10BallData.SpinAxis * Math.PI / 180),
-        BackSpin = r10BallData.TotalSpin * Math.Cos(r10BallData.SpinAxis * Math.PI / 180)
+        BackSpin = r10BallData.TotalSpin * Math.Cos(r10BallData.SpinAxis * Math.PI / 180),
+        SpinCalcType = r10BallData.SpinCalcType
       };
     }
 
@@ -169,7 +171,7 @@ namespace gspro_r10
         Speed = r10ClubData.ClubHeadSpeed,
         SpeedAtImpact = r10ClubData.ClubHeadSpeed,
         Path = r10ClubData.ClubAnglePath,
-        FaceToTarget = r10ClubData.ClubAngleFace
+        FaceToTarget = r10ClubData.ClubAngleFace 
       };
     }
   }

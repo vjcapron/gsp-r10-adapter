@@ -47,7 +47,15 @@ namespace gspro_r10.R10
     public double BallSpeed { get; set; }
     public double? BackSpin { get; set; }
     public double? SideSpin { get; set; }
-  }
+
+    private string _spinCalcType = "";
+    public string SpinCalcType
+    {
+        get { return _spinCalcType; }
+        set { _spinCalcType = value; }
+    }
+    }
+
 
   public class SetClubDataMessage : R10Message
   {
