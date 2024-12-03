@@ -16,7 +16,7 @@ namespace gspro_r10
         private BluetoothConnection? BluetoothConnection { get; }
         internal HttpPuttingServer? PuttingConnection { get; }
 
-
+        private bool ignoreMarkedBalls = false;
         private bool ignoreVlaMisreads = false;
         private decimal minimumVLA = -1;
         private bool playSoundOnMisread = false;
@@ -68,6 +68,7 @@ namespace gspro_r10
             }
 
             bool.TryParse(configuration.GetSection("bluetooth")["ignoreVLAMisreads"], out ignoreVlaMisreads);
+            bool.TryParse(configuration.GetSection("bluetooth")["ignoreMarkedBalls"], out ignoreMarkedBalls);
             decimal.TryParse(configuration.GetSection("bluetooth")["minimumVLA"], out minimumVLA);
             bool.TryParse(configuration.GetSection("bluetooth")["playSoundOnMisread"], out playSoundOnMisread);
             bool.TryParse(configuration.GetSection("bluetooth")["playSoundOnPracticeSwing"], out playSoundOnPracticeSwing);
@@ -87,8 +88,30 @@ namespace gspro_r10
             if (this.ignoreVlaMisreads)
             {
                 if (ballData != null && ballData.VLA > (double)minimumVLA)
-                {
-                    OpenConnectClient.SendAsync(openConnectMessage);
+                {   
+                    if (this.ignoreMarkedBalls && ballData.SpinCalcType != "Ratio")
+                    {
+                        if (playSoundOnMisread && (st.HasValue && st == ShotType.Normal))
+                        {
+                            // Initialize a new instance of the SpeechSynthesizer.  
+                            SpeechSynthesizer synth = new SpeechSynthesizer();
+                            // Set a value for the speaking rate.  
+                            synth.Rate = 1;
+                            synth.Volume = 100;
+                            // Configure the audio output.   
+                            synth.SetOutputToDefaultAudioDevice();
+
+                            if (st.HasValue && st == ShotType.Normal)
+                            {
+                                // Speak a text string synchronously.  
+                                synth.Speak("Misread occurred. Marked ball detected.");
+                            }
+                        }
+                    }
+                    else
+                    {
+                        OpenConnectClient.SendAsync(openConnectMessage);
+                    }                    
                 }
                 else
                 {

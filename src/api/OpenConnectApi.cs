@@ -87,6 +87,12 @@ namespace gspro_r10.OpenConnect
     public double HLA { get; set; }
     public double VLA { get; set; }
     public double CarryDistance { get; set; }
+    
+    private string _spinCalcType = "";
+    public string SpinCalcType {
+            get { return _spinCalcType; }
+            set { _spinCalcType = value; } 
+    }
 
   }
 

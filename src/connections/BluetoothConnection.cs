@@ -94,7 +94,7 @@ namespace gspro_r10
       lm.ShotMetrics += (o, e) =>
       {
         LogMetrics(e.Metrics);
-        ConnectionManager.SendShot(e.Metrics?.ShotType,
+        ConnectionManager.SendShot(e.Metrics?.ShotType, 
           BallDataFromLaunchMonitorMetrics(e.Metrics?.BallMetrics),
           ClubDataFromLaunchMonitorMetrics(e.Metrics?.ClubMetrics)
         );
@@ -134,20 +134,41 @@ namespace gspro_r10
       return null;
     }
 
+    public static string GetSpinCalcType(BallMetrics? ballMetrics)
+        {
+            if (ballMetrics == null) return "";            
+            if (ballMetrics.HasSpinCalculationType)
+            {
+                return ballMetrics.SpinCalculationType.ToString();                
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        //[pbr::OriginalName("RATIO")] Ratio = 0,
+        //[pbr::OriginalName("BALL_FLIGHT")] BallFlight = 1,
+        //[pbr::OriginalName("OTHER")] Other = 2,
+        //[pbr::OriginalName("MEASURED")] Measured = 3,
+
     public static BallData? BallDataFromLaunchMonitorMetrics(BallMetrics? ballMetrics)
     {
       if (ballMetrics == null) return null;
-      return new BallData()
-      {
-        HLA = ballMetrics.LaunchDirection,
-        VLA = ballMetrics.LaunchAngle,
-        Speed = ballMetrics.BallSpeed * METERS_PER_S_TO_MILES_PER_HOUR,
-        SpinAxis = ballMetrics.SpinAxis * -1,
-        TotalSpin = ballMetrics.TotalSpin,
-        SideSpin = ballMetrics.TotalSpin * Math.Sin(-1 * ballMetrics.SpinAxis * Math.PI / 180),
-        BackSpin = ballMetrics.TotalSpin * Math.Cos(-1 * ballMetrics.SpinAxis * Math.PI / 180)
-      };
+            return new BallData()
+            {
+                HLA = ballMetrics.LaunchDirection,
+                VLA = ballMetrics.LaunchAngle,
+                Speed = ballMetrics.BallSpeed * METERS_PER_S_TO_MILES_PER_HOUR,
+                SpinAxis = ballMetrics.SpinAxis * -1,
+                TotalSpin = ballMetrics.TotalSpin,
+                SideSpin = ballMetrics.TotalSpin * Math.Sin(-1 * ballMetrics.SpinAxis * Math.PI / 180),
+                BackSpin = ballMetrics.TotalSpin * Math.Cos(-1 * ballMetrics.SpinAxis * Math.PI / 180),
+                SpinCalcType = GetSpinCalcType(ballMetrics)
+            };
     }
+
+
 
     public static ClubData? ClubDataFromLaunchMonitorMetrics(ClubMetrics? clubMetrics)
     {

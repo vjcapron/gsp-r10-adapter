@@ -7,26 +7,27 @@
     "enabled": true,
     "port": 2483
   },
-  "bluetooth": {
-    "enabled": true, //bluetooth enabled
-    "bluetoothDeviceName": "Approach R10",
-    "reconnectInterval": 10, // seconds
-    "sendStatusChangesToGSP": false, // send device readiness updates to gsp (does nothing as of today)
-    "autoWake": true, // wake device if falls asleep
-    "calibrateTiltOnConnect": true, // recalibrate tilt at the start of every session
-    "debugLogging": false,
-    "altitude": 0, // feet
-    "humidity": 0.5, // percent (0 - 1)
-    "temperature": 60, // fahrenheit 
-    "airDensity": 1.225, // kg/m^3
-    "teeDistanceInFeet": 7, // distance from R10 to ball in feet
-    "ignoreVLAMisreads": true, // if true, shots that do not meet the minimum VLA will be ignored and not sent to GS Pro.  
-    "minimumVLA": 0.5, // decimal.  Most misreads on short chips have zero VLA.  If shot data is read by garmin as zero VLA.  Set to Higher number to test logic.
-    "playSoundOnMisread": true, // if true, zero VLA shots (usually misreads on short chips) will be ignored and not sent to GS Pro.  
-    "playSoundOnPracticeSwing": true, // if true, audio will announce swing speed of the practice swing.
-    "MisreadAudioFile": "doh2.wav" //deprecated. not used anymore. wav file must reside in current directory.
+    "bluetooth": {
+        "enabled": true, //bluetooth enabled
+        "bluetoothDeviceName": "Approach R10",
+        "reconnectInterval": 10, // seconds
+        "sendStatusChangesToGSP": false, // send device readiness updates to gsp (does nothing as of today)
+        "autoWake": true, // wake device if falls asleep
+        "calibrateTiltOnConnect": true, // recalibrate tilt at the start of every session
+        "debugLogging": false,
+        "altitude": 0, // feet
+        "humidity": 0.5, // percent (0 - 1)
+        "temperature": 60, // fahrenheit 
+        "airDensity": 1.225, // kg/m^3
+        "teeDistanceInFeet": 7, // distance from R10 to ball in feet
+        "ignoreVLAMisreads": true, // if true, shots that do not meet the minimum VLA will be ignored and not sent to GS Pro.  
+        "ignoreMarkedBalls": true, // if true, shots that are seen as Marked (either RCT ball or ball with metal dot) will be ignored.  Most misreads are coming from normal balls that are seen as marked for some reason and produces low spin rates.
+        "minimumVLA": 0.5, // decimal.  Most misreads on short chips have zero VLA.  If shot data is read by garmin as zero VLA.  Set to Higher number to test logic.
+        "playSoundOnMisread": true, // if true, zero VLA shots (usually misreads on short chips) will be ignored and not sent to GS Pro.  
+        "playSoundOnPracticeSwing": true, // if true, audio will announce swing speed of the practice swing.
+        "MisreadAudioFile": "doh2.wav" //deprecated. not used anymore. wav file must reside in current directory.
 
-  },
+    },
   "putting": {
     "enabled": false,
     "port": 8888,
