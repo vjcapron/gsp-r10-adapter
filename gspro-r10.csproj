@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
+    <TargetFramework>net9.0-windows10.0.22621.0</TargetFramework>
     <RootNamespace>gspro_r10</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -20,16 +20,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
-    <PackageReference Include="NetCoreServer" Version="7.0.0" />
-    <PackageReference Include="InTheHand.BluetoothLE" Version="4.0.33" />
-    <PackageReference Include="Google.Protobuf" Version="3.22.1" />
-    <PackageReference Include="Grpc.Tools" Version="2.53.0">
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.0" />
+    <PackageReference Include="NetCoreServer" Version="8.0.7" />
+    <PackageReference Include="InTheHand.BluetoothLE" Version="4.0.37" />
+    <PackageReference Include="Google.Protobuf" Version="3.29.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.67.0">
       <IncludeAssets>build; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="System.Speech" Version="7.0.0" />
-    <PackageReference Include="System.Windows.Extensions" Version="8.0.0-preview.5.23280.8" />
+    <PackageReference Include="System.Speech" Version="9.0.0" />
+    <PackageReference Include="System.Windows.Extensions" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
