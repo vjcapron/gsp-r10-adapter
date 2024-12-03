@@ -72,7 +72,7 @@ namespace gspro_r10
         //SpinAxis = -1 * (puttBallData.SpinAxis < 90 ? r10BallData.SpinAxis : r10BallData.SpinAxis - 360),
         TotalSpin = puttBallData.TotalSpin,
         HLA = puttBallData.LaunchDirection,
-        VLA = 0,
+        VLA = 0.6,
       };
     }
   }

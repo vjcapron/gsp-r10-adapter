@@ -60,13 +60,7 @@ namespace gspro_r10
                 PuttingConnection = new HttpPuttingServer(this, configuration.GetSection("putting"));
                 PuttingConnection.Start();
             }
-
-            if (bool.Parse(configuration.GetSection("bluetooth")["enabled"] ?? "false"))
-            {
-                PuttingConnection = new HttpPuttingServer(this, configuration.GetSection("putting"));
-                PuttingConnection.Start();
-            }
-
+           
             bool.TryParse(configuration.GetSection("bluetooth")["ignoreVLAMisreads"], out ignoreVlaMisreads);
             decimal.TryParse(configuration.GetSection("bluetooth")["minimumVLA"], out minimumVLA);
             bool.TryParse(configuration.GetSection("bluetooth")["playSoundOnMisread"], out playSoundOnMisread);
@@ -95,18 +89,22 @@ namespace gspro_r10
                     OpenConnectLogger.LogGSPOutgoing(openConnectMessage);
                     if (playSoundOnMisread && (st.HasValue && st == ShotType.Normal))
                     {
-                        // Initialize a new instance of the SpeechSynthesizer.  
-                        SpeechSynthesizer synth = new SpeechSynthesizer();
-                        // Set a value for the speaking rate.  
-                        synth.Rate = 1;
-                        synth.Volume = 100;
-                        // Configure the audio output.   
-                        synth.SetOutputToDefaultAudioDevice();
+                  
 
                         if (st.HasValue && st == ShotType.Normal)
                         {
-                            // Speak a text string synchronously.  
-                            synth.Speak("Misread occurred. Please try again.");
+                            // Initialize a new instance of the SpeechSynthesizer.  
+                            using(SpeechSynthesizer synth = new SpeechSynthesizer())
+                            {
+                                // Set a value for the speaking rate.  
+                                synth.Rate = 1;
+                                synth.Volume = 100;
+                                // Configure the audio output.   
+                                synth.SetOutputToDefaultAudioDevice();
+                                // Speak a text string synchronously.  
+                                synth.Speak("Misread occurred. Please try again.");
+                            }
+
                         }
                     }
                     if (playSoundOnPracticeSwing && (st.HasValue && st == ShotType.Practice))
