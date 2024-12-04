@@ -138,7 +138,12 @@ namespace gspro_r10
         {
             if (ballMetrics == null) return "";            
             if (ballMetrics.HasSpinCalculationType)
-            {
+            { 
+                if (ballMetrics.SpinCalculationType.ToString() == "Ratio")
+                {
+                    float multiplier = 1.08F;
+                    ballMetrics.TotalSpin = ballMetrics.TotalSpin * multiplier;
+                }
                 return ballMetrics.SpinCalculationType.ToString();                
             }
             else
@@ -157,14 +162,14 @@ namespace gspro_r10
       if (ballMetrics == null) return null;
             return new BallData()
             {
+                SpinCalcType = GetSpinCalcType(ballMetrics),
                 HLA = ballMetrics.LaunchDirection,
                 VLA = ballMetrics.LaunchAngle,
                 Speed = ballMetrics.BallSpeed * METERS_PER_S_TO_MILES_PER_HOUR,
                 SpinAxis = ballMetrics.SpinAxis * -1,
                 TotalSpin = ballMetrics.TotalSpin,
                 SideSpin = ballMetrics.TotalSpin * Math.Sin(-1 * ballMetrics.SpinAxis * Math.PI / 180),
-                BackSpin = ballMetrics.TotalSpin * Math.Cos(-1 * ballMetrics.SpinAxis * Math.PI / 180),
-                SpinCalcType = GetSpinCalcType(ballMetrics)
+                BackSpin = ballMetrics.TotalSpin * Math.Cos(-1 * ballMetrics.SpinAxis * Math.PI / 180)
             };
     }
 

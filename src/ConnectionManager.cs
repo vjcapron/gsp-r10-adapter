@@ -83,7 +83,7 @@ namespace gspro_r10
             {
                 if (ballData != null && ballData.VLA > (double)minimumVLA)
                 {   
-                    if (this.ignoreMarkedBalls && ballData.SpinCalcType != "Ratio")
+                    if (this.ignoreMarkedBalls && ballData.SpinCalcType != "Ratio" && ballData.SpinCalcType != "")
                     {
                         if (playSoundOnMisread && (st.HasValue && st == ShotType.Normal))
                         {

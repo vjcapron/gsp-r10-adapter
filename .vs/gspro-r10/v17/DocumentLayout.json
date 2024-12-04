@@ -1,54 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\",
+  "WorkspaceRootPath": "C:\\Users\\vjcap\\OneDrive\\Documents\\GitHub\\gsp-r10-adapter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:src\\connectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\onedrive\\documents\\github\\gsp-r10-adapter\\gspro-r10.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:gspro-r10.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\onedrive\\documents\\github\\gsp-r10-adapter\\obj\\project.assets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:obj\\project.assets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\r10connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:src\\connections\\r10connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\onedrive\\documents\\github\\gsp-r10-adapter\\gspro-r10.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:gspro-r10.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\bluetoothconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:src\\connections\\bluetoothconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\puttingconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:src\\connections\\puttingconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\api\\r10api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:src\\api\\r10api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\api\\openconnectapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:src\\api\\openconnectapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\obj\\debug\\net9.0-windows10.0.19041.0\\launchmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:obj\\debug\\net9.0-windows10.0.19041.0\\launchmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\bluetooth\\proto\\launchmonitor.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:src\\bluetooth\\proto\\launchmonitor.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\openconnectconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:src\\connections\\openconnectconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\bluetooth\\device\\launchmonitordevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:src\\bluetooth\\device\\launchmonitordevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|c:\\users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\util\\baselogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858003D2-8869-49FD-86DD-83C1FCC07808}|gspro-r10.csproj|solutionrelative:src\\util\\baselogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,162 +25,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "settings.json",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\settings.json",
-              "RelativeDocumentMoniker": "settings.json",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\settings.json",
-              "RelativeToolTip": "settings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
+              "Title": "project.assets.json",
+              "DocumentMoniker": "C:\\Users\\vjcap\\OneDrive\\Documents\\GitHub\\gsp-r10-adapter\\obj\\project.assets.json",
+              "RelativeDocumentMoniker": "obj\\project.assets.json",
+              "ToolTip": "C:\\Users\\vjcap\\OneDrive\\Documents\\GitHub\\gsp-r10-adapter\\obj\\project.assets.json",
+              "RelativeToolTip": "obj\\project.assets.json",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-03T00:06:20.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "R10Api.cs",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\api\\R10Api.cs",
-              "RelativeDocumentMoniker": "src\\api\\R10Api.cs",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\api\\R10Api.cs",
-              "RelativeToolTip": "src\\api\\R10Api.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAUwDIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T00:00:55.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OpenConnectApi.cs",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\api\\OpenConnectApi.cs",
-              "RelativeDocumentMoniker": "src\\api\\OpenConnectApi.cs",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\api\\OpenConnectApi.cs",
-              "RelativeToolTip": "src\\api\\OpenConnectApi.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAQwFoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T23:28:54.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PuttingConnection.cs",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\PuttingConnection.cs",
-              "RelativeDocumentMoniker": "src\\connections\\PuttingConnection.cs",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\PuttingConnection.cs",
-              "RelativeToolTip": "src\\connections\\PuttingConnection.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAuwEoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T23:25:35.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LaunchMonitor.proto",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\bluetooth\\proto\\LaunchMonitor.proto",
-              "RelativeDocumentMoniker": "src\\bluetooth\\proto\\LaunchMonitor.proto",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\bluetooth\\proto\\LaunchMonitor.proto",
-              "RelativeToolTip": "src\\bluetooth\\proto\\LaunchMonitor.proto",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAAANcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
-              "WhenOpened": "2024-12-02T23:16:53.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LaunchMonitor.cs",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\obj\\Debug\\net9.0-windows10.0.19041.0\\LaunchMonitor.cs",
-              "RelativeDocumentMoniker": "obj\\Debug\\net9.0-windows10.0.19041.0\\LaunchMonitor.cs",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\obj\\Debug\\net9.0-windows10.0.19041.0\\LaunchMonitor.cs",
-              "RelativeToolTip": "obj\\Debug\\net9.0-windows10.0.19041.0\\LaunchMonitor.cs",
-              "ViewState": "AgIAAK8eAAAAAAAAAAAAwLkeAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T23:12:15.23Z",
+              "WhenOpened": "2024-12-04T03:23:58.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BluetoothConnection.cs",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\BluetoothConnection.cs",
-              "RelativeDocumentMoniker": "src\\connections\\BluetoothConnection.cs",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\BluetoothConnection.cs",
-              "RelativeToolTip": "src\\connections\\BluetoothConnection.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAkwGMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T23:11:44.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "R10Connection.cs",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\R10Connection.cs",
-              "RelativeDocumentMoniker": "src\\connections\\R10Connection.cs",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\R10Connection.cs",
-              "RelativeToolTip": "src\\connections\\R10Connection.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAkwGAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T23:06:32.558Z",
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAP0AAAAAAAAAAADgvwkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-12-04T03:21:40.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ConnectionManager.cs",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\ConnectionManager.cs",
-              "RelativeDocumentMoniker": "src\\ConnectionManager.cs",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\ConnectionManager.cs",
-              "RelativeToolTip": "src\\ConnectionManager.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAYwGoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T22:59:37.602Z",
+              "Title": "gspro-r10",
+              "DocumentMoniker": "C:\\Users\\vjcap\\OneDrive\\Documents\\GitHub\\gsp-r10-adapter\\gspro-r10.csproj",
+              "RelativeDocumentMoniker": "gspro-r10.csproj",
+              "ToolTip": "C:\\Users\\vjcap\\OneDrive\\Documents\\GitHub\\gsp-r10-adapter\\gspro-r10.csproj",
+              "RelativeToolTip": "gspro-r10.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-04T03:19:49.145Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OpenConnectConnection.cs",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\OpenConnectConnection.cs",
-              "RelativeDocumentMoniker": "src\\connections\\OpenConnectConnection.cs",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\connections\\OpenConnectConnection.cs",
-              "RelativeToolTip": "src\\connections\\OpenConnectConnection.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAwDgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T23:23:39.587Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LaunchMonitorDevice.cs",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\bluetooth\\device\\LaunchMonitorDevice.cs",
-              "RelativeDocumentMoniker": "src\\bluetooth\\device\\LaunchMonitorDevice.cs",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\bluetooth\\device\\LaunchMonitorDevice.cs",
-              "RelativeToolTip": "src\\bluetooth\\device\\LaunchMonitorDevice.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAuwEIAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T23:18:34.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BaseLogger.cs",
-              "DocumentMoniker": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\util\\BaseLogger.cs",
-              "RelativeDocumentMoniker": "src\\util\\BaseLogger.cs",
-              "ToolTip": "C:\\Users\\vjcap\\source\\repos\\gsp-r10-adapter\\src\\util\\BaseLogger.cs",
-              "RelativeToolTip": "src\\util\\BaseLogger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T23:02:07.775Z",
+              "DocumentIndex": 2,
+              "Title": "gspro-r10",
+              "DocumentMoniker": "C:\\Users\\vjcap\\OneDrive\\Documents\\GitHub\\gsp-r10-adapter\\gspro-r10.csproj",
+              "RelativeDocumentMoniker": "gspro-r10.csproj",
+              "ToolTip": "C:\\Users\\vjcap\\OneDrive\\Documents\\GitHub\\gsp-r10-adapter\\gspro-r10.csproj",
+              "RelativeToolTip": "gspro-r10.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-04T03:19:52.002Z",
               "EditorCaption": ""
             }
           ]
